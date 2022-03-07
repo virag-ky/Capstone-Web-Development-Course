@@ -7,6 +7,7 @@ $main-color1: #ec5242;
 $main-color2: #595c61;
 $main-color3: #d3d3d3;
 $header-bg: url(/images/background.png);
+$small-font: 0.8rem;
 
 *,
 *::before,
@@ -23,6 +24,13 @@ $header-bg: url(/images/background.png);
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@mixin red-line {
+  width: 50px;
+  height: 2px;
+  background-color: $main-color1;
+  opacity: 0.6;
 }
 
 body {

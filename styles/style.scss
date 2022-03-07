@@ -35,7 +35,7 @@ header {
   p {
     border: 3px solid #fff;
     background-color: #faf7f7;
-    font-size: 0.8rem;
+    font-size: $small-font;
     font-family: $font2;
     font-weight: 500;
     padding: 10px;
@@ -56,7 +56,7 @@ header {
 
   #location {
     font-family: $font2;
-    font-size: 0.8rem;
+    font-size: $small-font;
   }
 }
 
@@ -64,15 +64,58 @@ main {
   #main-curriculum {
     background-color: #262731;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+
+    .red-line {
+      @include red-line;
+      margin: 15px 0 30px 0;
+    }
 
     .languages {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(151, 148, 148, 0.1);
+      padding: 10px;
+      margin-bottom: 10px;
+
       span {
         color: #fff;
+        background-color: $main-color1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
       }
 
       h3 {
         color: $main-color1;
       }
+
+      p {
+        width: 50%;
+        font-size: $small-font;
+        line-height: 1.5;
+      }
+    }
+
+    button {
+      background-color: $main-color1;
+      border: none;
+      color: #fff;
+      width: 80%;
+      font-size: 1rem;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    button:hover {
+      cursor: pointer;
     }
   }
 }
