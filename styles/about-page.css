@@ -100,6 +100,7 @@ main #logo-section {
 main #logo-section h2 {
   text-align: center;
   width: 80%;
+  font-size: 1.2rem;
 }
 
 main #logo-section .red-line {
@@ -168,6 +169,7 @@ main #students {
 
 main #students h2 {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 main #students .red-line {
@@ -212,6 +214,7 @@ main #students .containers .red-div h4 {
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 15px;
+  font-family: cocogoose, sans-serif;
 }
 
 main #students .containers .red-div span {
