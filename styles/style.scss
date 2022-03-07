@@ -1,1 +1,92 @@
+@import "base";
 
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: $header-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  padding: 20px;
+
+  span {
+    color: $main-color2;
+  }
+
+  #welcome-words {
+    color: $main-color1;
+    font-family: $font2;
+    margin: 35px 0 5px 0;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    @include title-background;
+    font-family: $font1;
+
+    span {
+      display: block;
+      margin-top: -12px;
+    }
+  }
+
+  p {
+    border: 3px solid #fff;
+    background-color: #faf7f7;
+    font-size: 0.8rem;
+    font-family: $font2;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  #next-class {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: $font1;
+
+    #start-date {
+      display: block;
+      margin-top: -8px;
+    }
+  }
+
+  #location {
+    font-family: $font2;
+    font-size: 0.8rem;
+  }
+}
+
+main {
+  #main-curriculum {
+    background-color: #262731;
+    color: #fff;
+
+    .languages {
+      span {
+        color: #fff;
+      }
+
+      h3 {
+        color: $main-color1;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 68vh;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    #next-class {
+      font-size: 1.2rem;
+    }
+  }
+}
