@@ -1,0 +1,191 @@
+@import "base";
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf7f7;
+  background-image: $about-bg;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 35%;
+  height: 60vh;
+  padding: 20px;
+
+  span {
+    color: $main-color2;
+  }
+
+  #welcome-words {
+    text-align: $text-center;
+    color: $main-color1;
+    font-family: $font2;
+    margin: 35px 0 5px 0;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    text-align: $text-center;
+    color: $main-color1;
+    font-family: $font1;
+
+    span {
+      text-align: $text-center;
+      color: $main-color1;
+    }
+  }
+
+  p:not(#contact) {
+    text-align: $text-center;
+    border: 2px solid rgb(243, 240, 240);
+    background-color: #fff;
+    font-size: $small-font;
+    font-family: $font2;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  #contact {
+    text-align: $text-center;
+    margin: 20px 0 10px 0;
+    padding: 0 50px;
+    font-size: $small-font;
+  }
+
+  #email {
+    text-align: $text-center;
+    font-size: $small-font;
+    text-decoration: underline;
+    font-weight: 900;
+  }
+}
+
+/* Main */
+
+main {
+  #logo-section {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #eeeded;
+
+    h2 {
+      text-align: $text-center;
+      width: 80%;
+    }
+
+    .red-line {
+      @include red-line;
+    }
+
+    p {
+      font-size: $small-font;
+      width: 80%;
+      text-align: $text-center;
+    }
+
+    .logo-container {
+      border: 2px solid #eeeded;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      margin-top: 30px;
+      padding: 20px 40px;
+      width: 100%;
+
+      span {
+        color: $main-color1;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: black;
+          font-family: $font1;
+        }
+      }
+    }
+  }
+
+  #students {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: $text-center;
+    }
+
+    .red-line {
+      @include red-line;
+    }
+
+    p {
+      text-align: $text-center;
+      font-size: $small-font;
+      width: 80%;
+    }
+
+    .containers {
+      width: 100%;
+      height: 200px;
+      margin-top: 20px;
+
+      .red-div {
+        background-color: rgba(187, 32, 32, 0.7);
+        height: 100%;
+        @include centered;
+        flex-direction: column;
+
+        h4 {
+          color: #fff;
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+        }
+
+        span {
+          color: rgba(253, 251, 251, 0.8);
+        }
+      }
+    }
+
+    #container-1 {
+      background-image: url(/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
+      @include image-bg;
+    }
+
+    #container-2 {
+      background-image: url(/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+      @include image-bg;
+    }
+  }
+
+  @include partners;
+}
+
+/* Footer */
+
+footer {
+  @include footer;
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 70vh;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    #next-class {
+      font-size: 1.2rem;
+    }
+  }
+}

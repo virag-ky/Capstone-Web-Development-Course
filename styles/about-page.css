@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: #595c61;
+}
+
+/* Header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #faf7f7;
+  background-image: url(/images/about-dektop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 35%;
+  height: 60vh;
+  padding: 20px;
+}
+
+header span {
+  color: #595c61;
+}
+
+header #welcome-words {
+  text-align: center;
+  color: #ec5242;
+  font-family: Lato, sans-serif;
+  margin: 35px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+header h1 {
+  text-align: center;
+  color: #ec5242;
+  font-family: cocogoose, sans-serif;
+}
+
+header h1 span {
+  text-align: center;
+  color: #ec5242;
+}
+
+header p:not(#contact) {
+  text-align: center;
+  border: 2px solid #f3f0f0;
+  background-color: #fff;
+  font-size: 0.8rem;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+header #contact {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  padding: 0 50px;
+  font-size: 0.8rem;
+}
+
+header #email {
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+/* Main */
+main #logo-section {
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #eeeded;
+}
+
+main #logo-section h2 {
+  text-align: center;
+  width: 80%;
+}
+
+main #logo-section .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main #logo-section p {
+  font-size: 0.8rem;
+  width: 80%;
+  text-align: center;
+}
+
+main #logo-section .logo-container {
+  border: 2px solid #eeeded;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+  margin-top: 30px;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+main #logo-section .logo-container span {
+  color: #ec5242;
+}
+
+main #logo-section .logo-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #logo-section .logo-container div span {
+  color: black;
+  font-family: cocogoose, sans-serif;
+}
+
+main #students {
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #students h2 {
+  text-align: center;
+}
+
+main #students .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main #students p {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+main #students .containers {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+main #students .containers .red-div {
+  background-color: rgba(187, 32, 32, 0.7);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #students .containers .red-div h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+main #students .containers .red-div span {
+  color: rgba(253, 251, 251, 0.8);
+}
+
+main #students #container-1 {
+  background-image: url(/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main #students #container-2 {
+  background-image: url(/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section#partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #434344;
+  padding: 30px 10px;
+}
+
+main section#partners h2 {
+  color: #fff;
+}
+
+main section#partners .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main section#partners #partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+main section#partners #partners-container span {
+  color: #979494;
+  font-size: 1.2rem;
+}
+
+main section#partners #partners-container span i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 30px;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
+footer .logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
+  font-family: cocogoose, sans-serif;
+  margin-left: 3px;
+}
+
+footer p {
+  font-size: 0.6rem;
+  width: 35%;
+  line-height: 1.5;
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 70vh;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header #next-class {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=about-page.css.map */

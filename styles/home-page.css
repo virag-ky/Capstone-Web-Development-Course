@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: #595c61;
+}
+
+/* Header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  padding: 20px;
+}
+
+header span {
+  color: #595c61;
+}
+
+header #welcome-words {
+  color: #ec5242;
+  font-family: Lato, sans-serif;
+  margin: 35px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+header h1 {
+  background: url(/images/red-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: cocogoose, sans-serif;
+}
+
+header h1 span {
+  display: block;
+  margin-top: -12px;
+}
+
+header p {
+  border: 3px solid #fff;
+  background-color: #faf7f7;
+  font-size: 0.8rem;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+header #next-class {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: cocogoose, sans-serif;
+}
+
+header #next-class #start-date {
+  display: block;
+  margin-top: -8px;
+}
+
+header #location {
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* Main */
+main {
+  /* Main Curriculum */
+  /* Featured teachers */
+}
+
+main #main-curriculum {
+  background-image: url(/images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 15px;
+}
+
+main #main-curriculum .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main #main-curriculum .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(82, 81, 81, 0.7);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main #main-curriculum .languages span {
+  color: #fff;
+  background-color: #ec5242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+main #main-curriculum .languages h3 {
+  color: #ec5242;
+}
+
+main #main-curriculum .languages p {
+  width: 50%;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+main #main-curriculum button {
+  background-color: #ec5242;
+  border: none;
+  color: #fff;
+  width: 80%;
+  font-size: 1rem;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+main #main-curriculum button:hover {
+  cursor: pointer;
+}
+
+main #featured-teachers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 15px;
+}
+
+main #featured-teachers .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main #featured-teachers .teachers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+main #featured-teachers .teachers .profile-container {
+  background-image: url("/images/checkerboard-squares-black-white.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  width: 135px;
+  height: 135px;
+  position: relative;
+}
+
+main #featured-teachers .teachers .profile-container #img-div1 {
+  background-image: url("/images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main #featured-teachers .teachers .profile-container #img-div2 {
+  background-image: url("/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main #featured-teachers .teachers .profile-container #img-div3 {
+  background-image: url("/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main #featured-teachers .teachers .profile-container #img-div4 {
+  background-image: url("/images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: top;
+}
+
+main #featured-teachers .teachers .profile-container #img-div5 {
+  background-image: url("/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: top;
+}
+
+main #featured-teachers .teachers .profile-container #img-div6 {
+  background-image: url("/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: top;
+}
+
+main #featured-teachers .teachers .teacher-info {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #featured-teachers .teachers .teacher-info blockquote {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #ec5242;
+}
+
+main #featured-teachers .teachers .teacher-info .grey-line {
+  width: 20px;
+  height: 2px;
+  background-color: #e7e8e9;
+}
+
+main #featured-teachers .teachers .teacher-info p {
+  font-size: 0.8rem;
+}
+
+main section#partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #434344;
+  padding: 30px 10px;
+}
+
+main section#partners h2 {
+  color: #fff;
+}
+
+main section#partners .red-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+main section#partners #partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+main section#partners #partners-container span {
+  color: #979494;
+  font-size: 1.2rem;
+}
+
+main section#partners #partners-container span i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 30px;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
+footer .logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
+  font-family: cocogoose, sans-serif;
+  margin-left: 3px;
+}
+
+footer p {
+  font-size: 0.6rem;
+  width: 35%;
+  line-height: 1.5;
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 68vh;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header #next-class {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=home-page.css.map */

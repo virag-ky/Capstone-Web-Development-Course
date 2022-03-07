@@ -7,7 +7,9 @@ $main-color1: #ec5242;
 $main-color2: #595c61;
 $main-color3: #d3d3d3;
 $header-bg: url(/images/background.png);
+$about-bg: url(/images/about-dektop.png);
 $small-font: 0.8rem;
+$text-center: center;
 
 *,
 *::before,
@@ -26,11 +28,99 @@ $small-font: 0.8rem;
   -webkit-text-fill-color: transparent;
 }
 
+@mixin image-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @mixin red-line {
   width: 50px;
   height: 2px;
   background-color: $main-color1;
   opacity: 0.6;
+  margin: 15px 0 30px 0;
+}
+
+@mixin grey-line {
+  width: 20px;
+  height: 2px;
+  background-color: #e7e8e9;
+}
+
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin image-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin partners {
+  section#partners {
+    @include centered;
+    flex-direction: column;
+    background-color: #434344;
+    padding: 30px 10px;
+
+    h2 {
+      color: #fff;
+    }
+
+    .red-line {
+      @include red-line;
+    }
+
+    #partners-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      span {
+        color: rgb(151, 148, 148);
+        font-size: 1.2rem;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+
+  .logo {
+    display: flex;
+    color: black;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      font-size: $small-font;
+      font-family: $font1;
+      margin-left: 3px;
+    }
+  }
+
+  p {
+    font-size: 0.6rem;
+    width: 35%;
+    line-height: 1.5;
+  }
 }
 
 body {

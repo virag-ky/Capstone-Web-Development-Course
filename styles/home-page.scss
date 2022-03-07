@@ -1,0 +1,226 @@
+@import "base";
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: $header-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  padding: 20px;
+
+  span {
+    color: $main-color2;
+  }
+
+  #welcome-words {
+    color: $main-color1;
+    font-family: $font2;
+    margin: 35px 0 5px 0;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    @include title-background;
+    font-family: $font1;
+
+    span {
+      display: block;
+      margin-top: -12px;
+    }
+  }
+
+  p {
+    border: 3px solid #fff;
+    background-color: #faf7f7;
+    font-size: $small-font;
+    font-family: $font2;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  #next-class {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: $font1;
+
+    #start-date {
+      display: block;
+      margin-top: -8px;
+    }
+  }
+
+  #location {
+    font-family: $font2;
+    font-size: $small-font;
+  }
+}
+
+/* Main */
+
+main {
+  /* Main Curriculum */
+
+  #main-curriculum {
+    background-image: url(/images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+    color: #fff;
+    @include centered;
+    flex-direction: column;
+    padding: 30px 15px;
+
+    .red-line {
+      @include red-line;
+    }
+
+    .languages {
+      @include centered;
+      justify-content: space-between;
+      background-color: rgba(82, 81, 81, 0.7);
+      padding: 10px;
+      margin-bottom: 10px;
+
+      span {
+        color: #fff;
+        background-color: $main-color1;
+        @include centered;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      h3 {
+        color: $main-color1;
+      }
+
+      p {
+        width: 50%;
+        font-size: $small-font;
+        line-height: 1.5;
+      }
+    }
+
+    button {
+      background-color: $main-color1;
+      border: none;
+      color: #fff;
+      width: 80%;
+      font-size: 1rem;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* Featured teachers */
+
+  #featured-teachers {
+    @include centered;
+    flex-direction: column;
+    padding: 30px 15px;
+
+    .red-line {
+      @include red-line;
+    }
+
+    .teachers {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+
+      .profile-container {
+        background-image: url("/images/checkerboard-squares-black-white.jpg");
+        background-repeat: no-repeat;
+        background-size: 40%;
+        width: 135px;
+        height: 135px;
+        position: relative;
+
+        #img-div1 {
+          background-image: url("/images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
+          @include image-container;
+        }
+
+        #img-div2 {
+          background-image: url("/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
+          @include image-container;
+        }
+
+        #img-div3 {
+          background-image: url("/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
+          @include image-container;
+        }
+
+        #img-div4 {
+          background-image: url("/images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
+          @include image-container;
+          background-position: top;
+        }
+
+        #img-div5 {
+          background-image: url("/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
+          @include image-container;
+          background-position: top;
+        }
+
+        #img-div6 {
+          background-image: url("/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
+
+          @include image-container;
+          background-position: top;
+        }
+      }
+
+      .teacher-info {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        blockquote {
+          font-size: $small-font;
+          font-style: italic;
+          color: $main-color1;
+        }
+
+        .grey-line {
+          @include grey-line;
+        }
+
+        p {
+          font-size: $small-font;
+        }
+      }
+    }
+  }
+
+  @include partners;
+}
+
+/* Footer */
+
+footer {
+  @include footer;
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 68vh;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    #next-class {
+      font-size: 1.2rem;
+    }
+  }
+}
