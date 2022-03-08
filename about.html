@@ -21,18 +21,61 @@
     <script src="/mobile-menu.js" defer></script>
   </head>
   <body>
+    <!--Navbar-->
+    <nav>
+      <div id="top-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div id="bottom-nav">
+        <div id="nav-logo">
+          <span>
+            <a href="/index.html"><i class="fas fa-globe fa-3x"></i></a>
+          </span>
+          <div>
+            <a href="/index.html">
+              <span>Virag's</span>
+              <span>Web Development</span>
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <div id="campaign">
+          <span><i class="fas fa-globe"></i>Campaign</span>
+        </div>
+      </div>
+    </nav>
     <!--Header-->
     <header>
-      <span>
+      <span id="menu">
         <i class="fas fa-bars fa-2x"></i>
       </span>
+      <span id="home"
+        ><a href="/index.html"><i class="fas fa-home fa-1x"></i>Home</a></span
+      >
       <span id="welcome-words">"Hello! Welcome to Virag's:"</span>
       <h1>
         WEB DEVELOPMENT
         <span>COURSE</span>
         <span>2022</span>
       </h1>
-      <p>
+      <div class="red-line" id="hidden-line"></div>
+      <p id="main-p">
         Virag's Web Development Course provides enough material, so in the end
         of the program you will have the skills to become a web developer. You
         will learn: HTML, CSS, JavaScript, Git/Github, and CLI. We cover all the
@@ -74,22 +117,24 @@
           Take a look at our students who already finished the program, and see
           what they had to say about the program.
         </p>
-        <div class="containers" id="container-1">
-          <div class="red-div">
-            <h4>2021</h4>
-            <span
-              ><i class="fas fa-globe"></i>Virag's Web Development Course
-              2021</span
-            >
+        <div id="red-container">
+          <div class="containers" id="container-1">
+            <div class="red-div">
+              <h4>2021</h4>
+              <span
+                ><i class="fas fa-globe"></i>Virag's Web Development Course
+                2021</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="containers" id="container-2">
-          <div class="red-div">
-            <h4>2020</h4>
-            <span
-              ><i class="fas fa-globe"></i>Virag's Web Development Course
-              2020</span
-            >
+          <div class="containers" id="container-2">
+            <div class="red-div">
+              <h4>2020</h4>
+              <span
+                ><i class="fas fa-globe"></i>Virag's Web Development Course
+                2020</span
+              >
+            </div>
           </div>
         </div>
       </section>

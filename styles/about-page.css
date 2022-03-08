@@ -15,6 +15,10 @@ body {
 }
 
 /* Header */
+nav {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +34,10 @@ header {
   background-position: 0% 35%;
   height: 60vh;
   padding: 20px;
+}
+
+header #home {
+  display: none;
 }
 
 header span {
@@ -55,7 +63,7 @@ header h1 span {
   color: #ec5242;
 }
 
-header p:not(#contact) {
+header #main-p {
   text-align: center;
   border: 2px solid #f3f0f0;
   background-color: #fff;
@@ -70,7 +78,7 @@ header p:not(#contact) {
 header #contact {
   text-align: center;
   margin: 20px 0 10px 0;
-  padding: 0 50px;
+  padding: 0 20px;
   font-size: 0.8rem;
 }
 
@@ -79,6 +87,10 @@ header #email {
   font-size: 0.8rem;
   text-decoration: underline;
   font-weight: 900;
+}
+
+header #email:hover {
+  cursor: pointer;
 }
 
 /* Main */
@@ -208,6 +220,7 @@ main #students .containers .red-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 6px;
 }
 
 main #students .containers .red-div h4 {
@@ -332,6 +345,265 @@ footer p {
   }
   header #next-class {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #e9e7e7;
+    background-color: #faf7f7;
+    -webkit-box-shadow: 0 0 8px 3px #c4c1c1;
+            box-shadow: 0 0 8px 3px #c4c1c1;
+    position: relative;
+    z-index: 1;
+  }
+  nav #top-nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    background-color: #313131;
+    padding: 10px 0;
+  }
+  nav #top-nav ul {
+    width: 80%;
+    min-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 30px;
+  }
+  nav #top-nav ul li {
+    list-style: none;
+  }
+  nav #top-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  nav #top-nav ul li a:hover {
+    color: #ec5242;
+  }
+  nav #bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    min-width: 768px;
+    padding: 15px 0;
+  }
+  nav #bottom-nav #nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav #bottom-nav #nav-logo span a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+  nav #bottom-nav #nav-logo div a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: black;
+    text-decoration: none;
+    font-family: cocogoose, sans-serif;
+    margin-left: 3px;
+  }
+  nav #bottom-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 55%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 10%;
+  }
+  nav #bottom-nav ul li {
+    list-style: none;
+  }
+  nav #bottom-nav ul li a {
+    text-decoration: none;
+    color: #595c61;
+  }
+  nav #bottom-nav ul li a:hover {
+    color: #ec5242;
+  }
+  nav #bottom-nav #campaign {
+    border: 5px solid #ec5242;
+    padding: 10px;
+  }
+  nav #bottom-nav #campaign span {
+    color: #ec5242;
+  }
+  nav #bottom-nav #campaign span i {
+    margin-right: 5px;
+  }
+  nav #bottom-nav #campaign:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 15px 3px #ec5242;
+            box-shadow: 0 0 15px 3px #ec5242;
+  }
+  #menu {
+    display: none;
+  }
+  header {
+    height: 100vh;
+    background-size: auto;
+    background-position: center 25%;
+    padding: 100px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #home {
+    display: block;
+    position: relative;
+    top: -5%;
+    left: 35%;
+  }
+  header #home a {
+    text-decoration: none;
+    color: #595c61;
+  }
+  header #home a i {
+    margin-right: 5px;
+  }
+  header #welcome-words {
+    display: none;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    width: 50%;
+    min-width: 700px;
+  }
+  header .red-line {
+    width: 50px;
+    height: 2px;
+    background-color: #ec5242;
+    opacity: 0.6;
+    margin: 15px 0 30px 0;
+  }
+  header #main-p {
+    width: 55%;
+    font-size: 1rem;
+    padding: 20px 30px;
+    line-height: 2;
+  }
+  header #contact {
+    font-size: 1rem;
+    padding: 30px 0;
+  }
+  header #email {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  main #logo-section {
+    padding: 50px 0 100px 0;
+  }
+  main #logo-section h2 {
+    font-size: 1.5rem;
+  }
+  main #logo-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  main #logo-section .logo-container {
+    width: 30%;
+    min-width: 500px;
+    padding: 50px 30px;
+  }
+  main #students {
+    padding: 50px 0 200px 0;
+  }
+  main #students h2 {
+    font-size: 1.5rem;
+  }
+  main #students p {
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+  main #students #red-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  main #students #red-container .containers {
+    width: 30%;
+    min-width: 350px;
+    height: 300px;
+  }
+  main #students #red-container .containers span {
+    color: #fff;
+    font-weight: 600;
+  }
+  main section#partners {
+    display: none;
+  }
+  footer {
+    background-color: #313131;
+    padding: 80px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  footer .logo span {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  footer p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: 50px;
   }
 }
 /*# sourceMappingURL=about-page.css.map */

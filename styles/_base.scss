@@ -124,6 +124,118 @@ $text-center: center;
   }
 }
 
+@mixin navbar {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(233, 231, 231);
+    background-color: #faf7f7;
+    box-shadow: 0 0 8px 3px rgb(196, 193, 193);
+    position: relative;
+    z-index: 1;
+
+    #top-nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #313131;
+      padding: 10px 0;
+
+      ul {
+        width: 80%;
+        min-width: 768px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            color: $main-color1;
+          }
+        }
+      }
+    }
+
+    #bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      min-width: 768px;
+      padding: 15px 0;
+
+      #nav-logo {
+        display: flex;
+
+        span {
+          a {
+            color: $main-color1;
+            text-decoration: none;
+          }
+        }
+        div {
+          a {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            text-decoration: none;
+            font-family: $font1;
+            margin-left: 3px;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        width: 55%;
+        justify-content: flex-end;
+        gap: 10%;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: $main-color2;
+          }
+
+          a:hover {
+            color: $main-color1;
+          }
+        }
+      }
+
+      #campaign {
+        border: 5px solid $main-color1;
+        padding: 10px;
+
+        span {
+          color: $main-color1;
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      #campaign:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px 3px $main-color1;
+      }
+    }
+  }
+}
+
 body {
   font-family: $font2;
   color: $main-color2;

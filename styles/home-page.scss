@@ -6,6 +6,37 @@ nav {
   display: none;
 }
 
+.open-menu {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-color: #313131;
+}
+
+.top-nav {
+  height: 50vh;
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $main-color1;
+      }
+    }
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -17,6 +48,12 @@ header {
 
   span {
     color: $main-color2;
+  }
+
+  span {
+    i:hover {
+      cursor: pointer;
+    }
   }
 
   #headline {
@@ -248,108 +285,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border-bottom: 1px solid rgb(233, 231, 231);
-    background-color: #faf7f7;
-
-    #top-nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: #313131;
-      padding: 10px 0;
-
-      ul {
-        width: 80%;
-        min-width: 768px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-
-        li {
-          list-style: none;
-
-          a {
-            text-decoration: none;
-            color: #fff;
-          }
-
-          a:hover {
-            color: $main-color1;
-          }
-        }
-      }
-    }
-
-    #bottom-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
-      min-width: 768px;
-      padding: 15px 0;
-
-      #nav-logo {
-        display: flex;
-
-        span {
-          color: $main-color1;
-        }
-        div {
-          display: flex;
-          flex-direction: column;
-          span {
-            color: black;
-            font-family: $font1;
-            margin-left: 3px;
-          }
-        }
-      }
-
-      ul {
-        display: flex;
-        width: 55%;
-        justify-content: flex-end;
-        gap: 10%;
-
-        li {
-          list-style: none;
-
-          a {
-            text-decoration: none;
-            color: $main-color2;
-          }
-
-          a:hover {
-            color: $main-color1;
-          }
-        }
-      }
-
-      #campaign {
-        border: 5px solid $main-color1;
-        padding: 10px;
-
-        span {
-          color: $main-color1;
-
-          i {
-            margin-right: 5px;
-          }
-        }
-      }
-
-      #campaign:hover {
-        cursor: pointer;
-        box-shadow: 0 0 15px 3px $main-color1;
-      }
-    }
-  }
+  @include navbar;
 
   header {
     display: flex;
