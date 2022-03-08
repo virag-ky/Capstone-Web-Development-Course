@@ -4,6 +4,10 @@
 
 > The project is about Virag's Web Development Course. The website gives information about the course, what languages you can learn, when the classes start, and features some of the teachers.
 
+> The about-page can be accessed from the homepage with the 'About' link.
+> The homepage can be accessed from the main logo, or the 'home' icon on the about-page.
+> Also, on the mobile version, both these pages can be accessed through the 'hamburger menu'.
+
 ## Built With
 
 - HTML
