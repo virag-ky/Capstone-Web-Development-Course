@@ -6,6 +6,112 @@ nav {
   display: none;
 }
 
+#exit-button {
+  display: none;
+}
+
+.open-menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #313131;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.top-nav {
+  width: 100%;
+  margin-bottom: 80px;
+
+  #exit-button {
+    display: block;
+    position: relative;
+    top: -90%;
+    left: 85%;
+    color: $main-color1;
+  }
+
+  #exit-button:hover {
+    cursor: pointer;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $main-color1;
+      }
+    }
+  }
+}
+
+.bottom-nav {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  #nav-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+
+      a {
+        color: $main-color1;
+      }
+    }
+
+    div {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  #campaign {
+    font-size: 1rem;
+    border: 2px solid gray;
+    padding: 15px 25px;
+    margin-top: 30px;
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -14,15 +120,15 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0% 35%;
-  height: 60vh;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 
   #home {
     display: none;
   }
 
-  span {
+  .menu {
     color: $main-color2;
+    cursor: pointer;
   }
 
   #welcome-words {
@@ -38,7 +144,7 @@ header {
     color: $main-color1;
     font-family: $font1;
 
-    span {
+    .h1-span {
       text-align: $text-center;
       color: $main-color1;
     }
@@ -118,6 +224,7 @@ main {
       div {
         display: flex;
         flex-direction: column;
+
         span {
           color: black;
           font-family: $font1;
@@ -155,7 +262,9 @@ main {
       .red-div {
         background-color: rgba(187, 32, 32, 0.7);
         height: 100%;
+
         @include centered;
+
         flex-direction: column;
         padding: 0 6px;
 
@@ -174,11 +283,13 @@ main {
 
     #container-1 {
       background-image: url(/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
+
       @include image-bg;
     }
 
     #container-2 {
       background-image: url(/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+
       @include image-bg;
     }
   }
@@ -194,8 +305,6 @@ footer {
 
 @media (max-width: 380px) {
   header {
-    height: 70vh;
-
     h1 {
       font-size: 1.8rem;
     }
@@ -215,7 +324,6 @@ footer {
 
   header {
     height: 100vh;
-    background-size: auto;
     background-position: center 25%;
     padding: 100px 0;
     display: flex;
@@ -336,13 +444,13 @@ footer {
       align-items: center;
       gap: 5px;
 
-      span {
+      #logo-span {
         color: #fff;
         font-size: 1.5rem;
       }
     }
 
-    p {
+    #footer-p {
       color: #fff;
       font-size: 1.2rem;
       margin-left: 50px;

@@ -2,7 +2,7 @@
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 
 $font1: cocogoose, sans-serif;
-$font2: Lato, sans-serif;
+$font2: lato, sans-serif;
 $main-color1: #ec5242;
 $main-color2: #595c61;
 $main-color3: #d3d3d3;
@@ -69,6 +69,7 @@ $text-center: center;
 @mixin partners {
   section#partners {
     @include centered;
+
     flex-direction: column;
     background-color: #434344;
     padding: 30px 10px;
@@ -136,6 +137,15 @@ $text-center: center;
     position: relative;
     z-index: 1;
 
+    a {
+      text-decoration: none;
+      color: $main-color2;
+    }
+
+    a:hover {
+      color: $main-color1;
+    }
+
     #top-nav {
       width: 100%;
       display: flex;
@@ -183,6 +193,7 @@ $text-center: center;
             text-decoration: none;
           }
         }
+
         div {
           a {
             display: flex;
@@ -203,15 +214,6 @@ $text-center: center;
 
         li {
           list-style: none;
-
-          a {
-            text-decoration: none;
-            color: $main-color2;
-          }
-
-          a:hover {
-            color: $main-color1;
-          }
         }
       }
 

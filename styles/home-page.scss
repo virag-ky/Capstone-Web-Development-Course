@@ -6,21 +6,46 @@ nav {
   display: none;
 }
 
+#exit-button {
+  display: none;
+}
+
 .open-menu {
-  display: block;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 100px;
   background-color: #313131;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .top-nav {
-  height: 50vh;
+  width: 100%;
+  margin-bottom: 80px;
+
+  #exit-button {
+    display: block;
+    position: relative;
+    top: -90%;
+    left: 85%;
+    color: $main-color1;
+  }
+
+  #exit-button:hover {
+    cursor: pointer;
+  }
+
   ul {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+
     li {
       list-style: none;
       margin-bottom: 20px;
@@ -29,11 +54,51 @@ nav {
         color: #fff;
         text-decoration: none;
       }
-
-      a:hover {
-        color: $main-color1;
-      }
     }
+  }
+}
+
+.bottom-nav {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  #nav-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+    }
+
+    a {
+      color: $main-color1;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  #campaign {
+    font-size: 1rem;
+    border: 2px solid gray;
+    padding: 15px 25px;
+    margin-top: 30px;
   }
 }
 
@@ -43,14 +108,11 @@ header {
   background-image: $header-bg;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 
-  span {
+  .menu {
     color: $main-color2;
-  }
 
-  span {
     i:hover {
       cursor: pointer;
     }
@@ -68,9 +130,10 @@ header {
 
     h1 {
       @include title-background;
+
       font-family: $font1;
 
-      span {
+      .h1-span {
         display: block;
         margin-top: -12px;
       }
@@ -117,7 +180,9 @@ main {
     background-size: cover;
     background-position: right;
     color: #fff;
+
     @include centered;
+
     flex-direction: column;
     padding: 30px 15px;
 
@@ -127,6 +192,7 @@ main {
 
     .languages {
       @include centered;
+
       justify-content: space-between;
       background-color: rgba(82, 81, 81, 0.7);
       padding: 10px;
@@ -136,7 +202,9 @@ main {
       span {
         color: #fff;
         background-color: $main-color1;
+
         @include centered;
+
         width: 50px;
         height: 50px;
         border-radius: 10px;
@@ -181,6 +249,7 @@ main {
 
   #featured-teachers {
     @include centered;
+
     flex-direction: column;
     padding: 30px 15px;
 
@@ -203,28 +272,35 @@ main {
 
         #img-div1 {
           background-image: url("/images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
+
           @include image-container;
         }
 
         #img-div2 {
           background-image: url("/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
+
           @include image-container;
         }
 
         #img-div3 {
           background-image: url("/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
+
           @include image-container;
         }
 
         #img-div4 {
           background-image: url("/images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
+
           @include image-container;
+
           background-position: top;
         }
 
         #img-div5 {
           background-image: url("/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
+
           @include image-container;
+
           background-position: top;
         }
 
@@ -232,6 +308,7 @@ main {
           background-image: url("/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
 
           @include image-container;
+
           background-position: top;
         }
       }
@@ -272,8 +349,6 @@ footer {
 
 @media (max-width: 380px) {
   header {
-    height: 68vh;
-
     h1 {
       font-size: 1.8rem;
     }
@@ -294,7 +369,6 @@ footer {
     padding: 0;
     height: 100vh;
     background-image: $header-bg2;
-    background-size: auto;
     background-position: top;
 
     #menu {
@@ -348,6 +422,7 @@ footer {
       h2 {
         padding: 30px 0 0 0;
       }
+
       #languages-container {
         display: flex;
         justify-content: center;
@@ -390,9 +465,11 @@ footer {
 
     #featured-teachers {
       padding: 50px 0;
+
       .red-line {
         margin-bottom: 50px;
       }
+
       #teachers-container {
         width: 50%;
         min-width: 768px;
@@ -420,12 +497,14 @@ footer {
 
     section#partners {
       padding: 50px 0;
+
       h2 {
         color: #8f8c8c;
       }
 
       #partners-container {
         gap: 50px;
+
         span {
           font-size: 2em;
         }
@@ -441,11 +520,13 @@ footer {
 
     .logo {
       align-items: center;
-      span {
+
+      #footer-logo {
         font-size: 1.5rem;
       }
     }
-    p {
+
+    #footer-p {
       font-size: 1.2rem;
     }
   }

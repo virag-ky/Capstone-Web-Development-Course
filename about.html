@@ -24,6 +24,7 @@
     <!--Navbar-->
     <nav>
       <div id="top-nav">
+        <span><i class="fas fa-times fa-2x" id="exit-button"></i></span>
         <ul>
           <li>
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -61,9 +62,9 @@
       </div>
     </nav>
     <!--Header-->
-    <header>
-      <span id="menu">
-        <i class="fas fa-bars fa-2x"></i>
+    <header class="menu">
+      <span>
+        <i class="fas fa-bars fa-2x" id="menu"></i>
       </span>
       <span id="home"
         ><a href="/index.html"><i class="fas fa-home fa-1x"></i>Home</a></span
@@ -71,8 +72,8 @@
       <span id="welcome-words">"Hello! Welcome to Virag's:"</span>
       <h1>
         WEB DEVELOPMENT
-        <span>COURSE</span>
-        <span>2022</span>
+        <span class="h1-span">COURSE</span>
+        <span class="h1-span">2022</span>
       </h1>
       <div class="red-line" id="hidden-line"></div>
       <p id="main-p">
@@ -153,15 +154,17 @@
     <!--Footer-->
     <footer>
       <div class="logo">
-        <span>
+        <span id="logo-span">
           <i class="fas fa-globe fa-2x"></i>
         </span>
-        <div>
+        <div id="logo-name">
           <span>Virag's</span>
           <span>Web Development</span>
         </div>
       </div>
-      <p>2022 Virag's Web Development Course. Some Rights Reserved</p>
+      <p id="footer-p">
+        2022 Virag's Web Development Course. Some Rights Reserved
+      </p>
     </footer>
   </body>
 </html>

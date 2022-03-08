@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
+
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   color: #595c61;
 }
 
@@ -19,35 +20,164 @@ nav {
   display: none;
 }
 
-header {
+#exit-button {
+  display: none;
+}
+
+.open-menu {
+  height: 100vh;
+  width: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #313131;
+}
+
+.open-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-nav {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.top-nav #exit-button {
+  display: block;
+  position: relative;
+  top: -90%;
+  left: 85%;
+  color: #ec5242;
+}
+
+.top-nav #exit-button:hover {
+  cursor: pointer;
+}
+
+.top-nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-nav ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.top-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav ul li a:hover {
+  color: #ec5242;
+}
+
+.bottom-nav {
+  width: 80%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.bottom-nav #nav-logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.bottom-nav #nav-logo span {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.bottom-nav #nav-logo span a {
+  color: #ec5242;
+}
+
+.bottom-nav #nav-logo div a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.bottom-nav ul li {
+  list-style: none;
+}
+
+.bottom-nav #campaign {
+  font-size: 1rem;
+  border: 2px solid gray;
+  padding: 15px 25px;
+  margin-top: 30px;
+}
+
+header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #faf7f7;
   background-image: url(/images/about-dektop.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0% 35%;
-  height: 60vh;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 }
 
 header #home {
   display: none;
 }
 
-header span {
+header .menu {
   color: #595c61;
+  cursor: pointer;
 }
 
 header #welcome-words {
   text-align: center;
   color: #ec5242;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   margin: 35px 0 5px 0;
   font-size: 1.2rem;
 }
@@ -58,7 +188,7 @@ header h1 {
   font-family: cocogoose, sans-serif;
 }
 
-header h1 span {
+header h1 .h1-span {
   text-align: center;
   color: #ec5242;
 }
@@ -68,7 +198,7 @@ header #main-p {
   border: 2px solid #f3f0f0;
   background-color: #fff;
   font-size: 0.8rem;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   font-weight: 500;
   padding: 10px;
   line-height: 1.5;
@@ -97,15 +227,14 @@ header #email:hover {
 main #logo-section {
   padding: 30px 15px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 2px solid #eeeded;
 }
 
@@ -132,14 +261,13 @@ main #logo-section p {
 main #logo-section .logo-container {
   border: 2px solid #eeeded;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 3px;
   margin-top: 30px;
   padding: 20px 40px;
@@ -152,12 +280,11 @@ main #logo-section .logo-container span {
 
 main #logo-section .logo-container div {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main #logo-section .logo-container div span {
@@ -168,15 +295,14 @@ main #logo-section .logo-container div span {
 main #students {
   padding: 40px 30px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #students h2 {
@@ -208,18 +334,17 @@ main #students .containers .red-div {
   background-color: rgba(187, 32, 32, 0.7);
   height: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0 6px;
 }
 
@@ -250,18 +375,17 @@ main #students #container-2 {
 
 main section#partners {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #434344;
   padding: 30px 10px;
 }
@@ -280,13 +404,12 @@ main section#partners .red-line {
 
 main section#partners #partners-container {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -302,216 +425,227 @@ main section#partners #partners-container span i {
 /* Footer */
 footer {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 25px 30px;
 }
 
 footer .logo {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: black;
 }
 
-footer .logo div {
+footer .logo #footer-logo {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 0.8rem;
   font-family: cocogoose, sans-serif;
   margin-left: 3px;
 }
 
-footer p {
+#footer-p {
   font-size: 0.6rem;
   width: 35%;
   line-height: 1.5;
 }
 
 @media (max-width: 380px) {
-  header {
-    height: 70vh;
-  }
   header h1 {
     font-size: 1.8rem;
   }
+
   header #next-class {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 768px) {
+  header a {
+    text-decoration: none;
+    color: #595c61;
+  }
+
   nav {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     border-bottom: 1px solid #e9e7e7;
     background-color: #faf7f7;
     -webkit-box-shadow: 0 0 8px 3px #c4c1c1;
-            box-shadow: 0 0 8px 3px #c4c1c1;
+    box-shadow: 0 0 8px 3px #c4c1c1;
     position: relative;
     z-index: 1;
   }
+
+  nav a {
+    text-decoration: none;
+    color: #595c61;
+  }
+
+  nav a:hover {
+    color: #ec5242;
+  }
+
   nav #top-nav {
     width: 100%;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 30px;
     background-color: #313131;
     padding: 10px 0;
   }
+
   nav #top-nav ul {
     width: 80%;
     min-width: 768px;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     gap: 30px;
   }
+
   nav #top-nav ul li {
     list-style: none;
   }
+
   nav #top-nav ul li a {
     text-decoration: none;
     color: #fff;
   }
+
   nav #top-nav ul li a:hover {
     color: #ec5242;
   }
+
   nav #bottom-nav {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 80%;
     min-width: 768px;
     padding: 15px 0;
   }
+
   nav #bottom-nav #nav-logo {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   nav #bottom-nav #nav-logo span a {
     color: #ec5242;
     text-decoration: none;
   }
+
   nav #bottom-nav #nav-logo div a {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     color: black;
     text-decoration: none;
     font-family: cocogoose, sans-serif;
     margin-left: 3px;
   }
+
   nav #bottom-nav ul {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 55%;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     gap: 10%;
   }
+
   nav #bottom-nav ul li {
     list-style: none;
   }
-  nav #bottom-nav ul li a {
-    text-decoration: none;
-    color: #595c61;
-  }
-  nav #bottom-nav ul li a:hover {
-    color: #ec5242;
-  }
+
   nav #bottom-nav #campaign {
     border: 5px solid #ec5242;
     padding: 10px;
   }
+
   nav #bottom-nav #campaign span {
     color: #ec5242;
   }
+
   nav #bottom-nav #campaign span i {
     margin-right: 5px;
   }
+
   nav #bottom-nav #campaign:hover {
     cursor: pointer;
     -webkit-box-shadow: 0 0 15px 3px #ec5242;
-            box-shadow: 0 0 15px 3px #ec5242;
+    box-shadow: 0 0 15px 3px #ec5242;
   }
+
   #menu {
     display: none;
   }
+
   header {
     height: 100vh;
-    background-size: auto;
     background-position: center 25%;
     padding: 100px 0;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   header #home {
     display: block;
     position: relative;
     top: -5%;
     left: 35%;
   }
-  header #home a {
-    text-decoration: none;
-    color: #595c61;
-  }
-  header #home a i {
+
+  header #home a .fa-home {
     margin-right: 5px;
   }
+
   header #welcome-words {
     display: none;
   }
+
   header h1 {
     font-size: 3.5rem;
     width: 50%;
     min-width: 700px;
   }
+
   header .red-line {
     width: 50px;
     height: 2px;
@@ -519,91 +653,107 @@ footer p {
     opacity: 0.6;
     margin: 15px 0 30px 0;
   }
+
   header #main-p {
     width: 55%;
     font-size: 1rem;
     padding: 20px 30px;
     line-height: 2;
   }
+
   header #contact {
     font-size: 1rem;
     padding: 30px 0;
   }
+
   header #email {
     font-size: 1rem;
     letter-spacing: 1px;
   }
+
   main #logo-section {
     padding: 50px 0 100px 0;
   }
+
   main #logo-section h2 {
     font-size: 1.5rem;
   }
+
   main #logo-section p {
     font-size: 1rem;
     margin-bottom: 30px;
   }
+
   main #logo-section .logo-container {
     width: 30%;
     min-width: 500px;
     padding: 50px 30px;
   }
+
   main #students {
     padding: 50px 0 200px 0;
   }
+
   main #students h2 {
     font-size: 1.5rem;
   }
+
   main #students p {
     margin-bottom: 50px;
     font-size: 1rem;
   }
+
   main #students #red-container {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 20px;
     width: 100%;
   }
+
   main #students #red-container .containers {
     width: 30%;
     min-width: 350px;
     height: 300px;
   }
+
   main #students #red-container .containers span {
     color: #fff;
     font-weight: 600;
   }
+
   main section#partners {
     display: none;
   }
+
   footer {
     background-color: #313131;
     padding: 80px 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   footer .logo {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 5px;
   }
-  footer .logo span {
+
+  footer .logo #logo-span {
     color: #fff;
     font-size: 1.5rem;
   }
-  footer p {
+
+  footer #footer-p {
     color: #fff;
     font-size: 1.2rem;
     margin-left: 50px;
   }
 }
-/*# sourceMappingURL=about-page.css.map */
