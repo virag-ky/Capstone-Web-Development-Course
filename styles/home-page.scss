@@ -176,7 +176,7 @@ main {
   /* Main Curriculum */
 
   #main-curriculum {
-    background-image: url(/images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
+    background-image: url(../images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
     background-size: cover;
     background-position: right;
     color: #fff;
@@ -263,7 +263,7 @@ main {
       margin-bottom: 30px;
 
       .profile-container {
-        background-image: url("/images/checkerboard-squares-black-white.jpg");
+        background-image: url("../images/checkerboard-squares-black-white.jpg");
         background-repeat: no-repeat;
         background-size: 40%;
         width: 135px;
@@ -271,25 +271,25 @@ main {
         position: relative;
 
         #img-div1 {
-          background-image: url("/images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
+          background-image: url("../images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
 
           @include image-container;
         }
 
         #img-div2 {
-          background-image: url("/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
+          background-image: url("../images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
 
           @include image-container;
         }
 
         #img-div3 {
-          background-image: url("/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
+          background-image: url("../images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
 
           @include image-container;
         }
 
         #img-div4 {
-          background-image: url("/images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
+          background-image: url("../images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
 
           @include image-container;
 
@@ -297,7 +297,7 @@ main {
         }
 
         #img-div5 {
-          background-image: url("/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
+          background-image: url("../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
 
           @include image-container;
 
@@ -305,7 +305,7 @@ main {
         }
 
         #img-div6 {
-          background-image: url("/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
+          background-image: url("../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
 
           @include image-container;
 
@@ -431,17 +431,14 @@ footer {
 
         .languages {
           flex-direction: column;
+          justify-content: space-between;
           text-align: $text-center;
           width: 15%;
           min-width: 160px;
-          padding: 20px;
+          padding: 20px 0;
 
           h3 {
             padding: 5px 0;
-          }
-
-          p {
-            width: 60%;
           }
         }
       }
@@ -522,6 +519,10 @@ footer {
       align-items: center;
 
       #footer-logo {
+        font-size: 1.5rem;
+      }
+
+      #logo-name {
         font-size: 1.5rem;
       }
     }

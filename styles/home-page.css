@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 *,
 *::before,
@@ -28,6 +28,7 @@ nav {
   height: 100vh;
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -65,7 +66,10 @@ nav {
 .top-nav ul {
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -82,6 +86,7 @@ nav {
 .bottom-nav {
   width: 80%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -100,6 +105,7 @@ nav {
 
 .bottom-nav #nav-logo {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -109,6 +115,7 @@ nav {
 
 .bottom-nav #nav-logo span {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -125,6 +132,7 @@ nav {
 .bottom-nav ul {
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -144,12 +152,13 @@ nav {
 
 header {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-image: url(/images/background.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px 20px 50px 20px;
@@ -175,7 +184,7 @@ header #headline #welcome-words {
 }
 
 header #headline h1 {
-  background: url(/images/red-bg.jpg);
+  background: url(../images/red-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -226,11 +235,12 @@ main {
 }
 
 main #main-curriculum {
-  background-image: url(/images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
+  background-image: url(../images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
   background-size: cover;
   background-position: right;
   color: #fff;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -255,6 +265,7 @@ main #main-curriculum .red-line {
 
 main #main-curriculum .languages {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -262,6 +273,9 @@ main #main-curriculum .languages {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: rgba(82, 81, 81, 0.7);
   padding: 10px;
   margin-bottom: 10px;
@@ -272,6 +286,7 @@ main #main-curriculum .languages span {
   color: #fff;
   background-color: #ec5242;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -319,6 +334,7 @@ main #main-curriculum #see-program {
 
 main #featured-teachers {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -343,13 +359,14 @@ main #featured-teachers .red-line {
 
 main #featured-teachers .teachers {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
 }
 
 main #featured-teachers .teachers .profile-container {
-  background-image: url("/images/checkerboard-squares-black-white.jpg");
+  background-image: url("../images/checkerboard-squares-black-white.jpg");
   background-repeat: no-repeat;
   background-size: 40%;
   width: 135px;
@@ -358,7 +375,7 @@ main #featured-teachers .teachers .profile-container {
 }
 
 main #featured-teachers .teachers .profile-container #img-div1 {
-  background-image: url("/images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
+  background-image: url("../images/bobby-barr-4ghz4KQWYD0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -370,7 +387,7 @@ main #featured-teachers .teachers .profile-container #img-div1 {
 }
 
 main #featured-teachers .teachers .profile-container #img-div2 {
-  background-image: url("/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
+  background-image: url("../images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -382,7 +399,7 @@ main #featured-teachers .teachers .profile-container #img-div2 {
 }
 
 main #featured-teachers .teachers .profile-container #img-div3 {
-  background-image: url("/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
+  background-image: url("../images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -394,9 +411,10 @@ main #featured-teachers .teachers .profile-container #img-div3 {
 }
 
 main #featured-teachers .teachers .profile-container #img-div4 {
-  background-image: url("/images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
+  background-image: url("../images/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 120px;
   height: 120px;
   position: absolute;
@@ -406,9 +424,10 @@ main #featured-teachers .teachers .profile-container #img-div4 {
 }
 
 main #featured-teachers .teachers .profile-container #img-div5 {
-  background-image: url("/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
+  background-image: url("../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 120px;
   height: 120px;
   position: absolute;
@@ -418,9 +437,10 @@ main #featured-teachers .teachers .profile-container #img-div5 {
 }
 
 main #featured-teachers .teachers .profile-container #img-div6 {
-  background-image: url("/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
+  background-image: url("../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 120px;
   height: 120px;
   position: absolute;
@@ -432,11 +452,14 @@ main #featured-teachers .teachers .profile-container #img-div6 {
 main #featured-teachers .teachers .teacher-info {
   width: 60%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -458,6 +481,7 @@ main #featured-teachers .teachers .teacher-info p {
 
 main section#partners {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -487,6 +511,7 @@ main section#partners .red-line {
 
 main section#partners #partners-container {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -508,6 +533,7 @@ main section#partners #partners-container span i {
 /* Footer */
 footer {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -517,12 +543,14 @@ footer {
 
 footer .logo {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: black;
 }
 
-footer .logo #logo-name {
+footer .logo div {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -533,7 +561,7 @@ footer .logo #logo-name {
   margin-left: 3px;
 }
 
-#footer-p {
+footer p {
   font-size: 0.6rem;
   width: 35%;
   line-height: 1.5;
@@ -553,6 +581,7 @@ footer .logo #logo-name {
 @media (min-width: 768px) {
   nav {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -582,6 +611,7 @@ footer .logo #logo-name {
   nav #top-nav {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -595,6 +625,7 @@ footer .logo #logo-name {
     width: 80%;
     min-width: 768px;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -617,6 +648,7 @@ footer .logo #logo-name {
 
   nav #bottom-nav {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -631,6 +663,7 @@ footer .logo #logo-name {
 
   nav #bottom-nav #nav-logo {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -641,6 +674,7 @@ footer .logo #logo-name {
 
   nav #bottom-nav #nav-logo div a {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -654,6 +688,7 @@ footer .logo #logo-name {
 
   nav #bottom-nav ul {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 55%;
     -webkit-box-pack: end;
@@ -687,6 +722,7 @@ footer .logo #logo-name {
 
   header {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -697,7 +733,7 @@ footer .logo #logo-name {
     align-items: center;
     padding: 0;
     height: 100vh;
-    background-image: url(/images/bkgrnd.png);
+    background-image: url(../images/bkgrnd.png);
     background-position: top;
   }
 
@@ -719,7 +755,7 @@ footer .logo #logo-name {
     font-size: 4.5rem;
   }
 
-  header #headline h1 .h1-span {
+  header #headline h1 span {
     margin-top: -35px;
   }
 
@@ -754,6 +790,7 @@ footer .logo #logo-name {
 
   main #main-curriculum #languages-container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -767,18 +804,17 @@ footer .logo #logo-name {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: center;
     width: 15%;
     min-width: 160px;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   main #main-curriculum #languages-container .languages h3 {
     padding: 5px 0;
-  }
-
-  main #main-curriculum #languages-container .languages p {
-    width: 60%;
   }
 
   main #main-curriculum button {
@@ -810,6 +846,7 @@ footer .logo #logo-name {
     min-width: 768px;
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr) [2];
     grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 0;
     column-gap: 0;
@@ -864,6 +901,10 @@ footer .logo #logo-name {
   }
 
   footer .logo #footer-logo {
+    font-size: 1.5rem;
+  }
+
+  footer .logo #logo-name {
     font-size: 1.5rem;
   }
 

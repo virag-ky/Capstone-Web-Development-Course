@@ -282,13 +282,13 @@ main {
     }
 
     #container-1 {
-      background-image: url(/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
+      background-image: url(../images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
 
       @include image-bg;
     }
 
     #container-2 {
-      background-image: url(/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+      background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
 
       @include image-bg;
     }
@@ -445,6 +445,11 @@ footer {
       gap: 5px;
 
       #logo-span {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      #logo-name {
         color: #fff;
         font-size: 1.5rem;
       }

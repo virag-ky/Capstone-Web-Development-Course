@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 *,
 *::before,
@@ -28,6 +28,7 @@ nav {
   height: 100vh;
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -65,7 +66,10 @@ nav {
 .top-nav ul {
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -86,6 +90,7 @@ nav {
 .bottom-nav {
   width: 80%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -104,6 +109,7 @@ nav {
 
 .bottom-nav #nav-logo {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -113,6 +119,7 @@ nav {
 
 .bottom-nav #nav-logo span {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -133,6 +140,7 @@ nav {
 .bottom-nav ul {
   width: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -152,13 +160,14 @@ nav {
 
 header {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #faf7f7;
-  background-image: url(/images/about-dektop.png);
+  background-image: url(../images/about-dektop.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0% 35%;
@@ -227,6 +236,7 @@ header #email:hover {
 main #logo-section {
   padding: 30px 15px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -261,6 +271,7 @@ main #logo-section p {
 main #logo-section .logo-container {
   border: 2px solid #eeeded;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -280,6 +291,7 @@ main #logo-section .logo-container span {
 
 main #logo-section .logo-container div {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -295,6 +307,7 @@ main #logo-section .logo-container div span {
 main #students {
   padding: 40px 30px;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -334,6 +347,7 @@ main #students .containers .red-div {
   background-color: rgba(187, 32, 32, 0.7);
   height: 100%;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -360,14 +374,14 @@ main #students .containers .red-div span {
 }
 
 main #students #container-1 {
-  background-image: url(/images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
+  background-image: url(../images/naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 main #students #container-2 {
-  background-image: url(/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+  background-image: url(../images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -375,6 +389,7 @@ main #students #container-2 {
 
 main section#partners {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -404,6 +419,7 @@ main section#partners .red-line {
 
 main section#partners #partners-container {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -425,6 +441,7 @@ main section#partners #partners-container span i {
 /* Footer */
 footer {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -434,12 +451,14 @@ footer {
 
 footer .logo {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: black;
 }
 
-footer .logo #footer-logo {
+footer .logo div {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -450,7 +469,7 @@ footer .logo #footer-logo {
   margin-left: 3px;
 }
 
-#footer-p {
+footer p {
   font-size: 0.6rem;
   width: 35%;
   line-height: 1.5;
@@ -467,13 +486,9 @@ footer .logo #footer-logo {
 }
 
 @media (min-width: 768px) {
-  header a {
-    text-decoration: none;
-    color: #595c61;
-  }
-
   nav {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -503,6 +518,7 @@ footer .logo #footer-logo {
   nav #top-nav {
     width: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -516,6 +532,7 @@ footer .logo #footer-logo {
     width: 80%;
     min-width: 768px;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -538,6 +555,7 @@ footer .logo #footer-logo {
 
   nav #bottom-nav {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -552,6 +570,7 @@ footer .logo #footer-logo {
 
   nav #bottom-nav #nav-logo {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -562,6 +581,7 @@ footer .logo #footer-logo {
 
   nav #bottom-nav #nav-logo div a {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -575,6 +595,7 @@ footer .logo #footer-logo {
 
   nav #bottom-nav ul {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 55%;
     -webkit-box-pack: end;
@@ -615,6 +636,7 @@ footer .logo #footer-logo {
     background-position: center 25%;
     padding: 100px 0;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -632,7 +654,12 @@ footer .logo #footer-logo {
     left: 35%;
   }
 
-  header #home a .fa-home {
+  header #home a {
+    text-decoration: none;
+    color: #595c61;
+  }
+
+  header #home a i {
     margin-right: 5px;
   }
 
@@ -705,6 +732,7 @@ footer .logo #footer-logo {
 
   main #students #red-container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -747,6 +775,11 @@ footer .logo #footer-logo {
   }
 
   footer .logo #logo-span {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  footer .logo #logo-name {
     color: #fff;
     font-size: 1.5rem;
   }

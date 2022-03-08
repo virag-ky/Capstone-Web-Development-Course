@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 $font1: cocogoose, sans-serif;
 $font2: lato, sans-serif;
 $main-color1: #ec5242;
 $main-color2: #595c61;
 $main-color3: #d3d3d3;
-$header-bg: url(/images/background.png);
-$header-bg2: url(/images/bkgrnd.png);
-$about-bg: url(/images/about-dektop.png);
+$header-bg: url(../images/background.png);
+$header-bg2: url(../images/bkgrnd.png);
+$about-bg: url(../images/about-dektop.png);
 $small-font: 0.8rem;
 $text-center: center;
 
@@ -21,7 +21,7 @@ $text-center: center;
 }
 
 @mixin title-background {
-  background: url(/images/red-bg.jpg);
+  background: url(../images/red-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
