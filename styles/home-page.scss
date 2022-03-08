@@ -2,6 +2,10 @@
 
 /* Header */
 
+nav {
+  display: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -15,48 +19,54 @@ header {
     color: $main-color2;
   }
 
-  #welcome-words {
-    color: $main-color1;
-    font-family: $font2;
-    margin: 35px 0 5px 0;
-    font-size: 1.2rem;
-  }
+  #headline {
+    margin-top: 35px;
 
-  h1 {
-    @include title-background;
-    font-family: $font1;
-
-    span {
-      display: block;
-      margin-top: -12px;
+    #welcome-words {
+      color: $main-color1;
+      font-family: $font2;
+      margin: 30px 0 5px 0;
+      font-size: 1.2rem;
     }
-  }
 
-  p {
-    border: 3px solid #fff;
-    background-color: #faf7f7;
-    font-size: $small-font;
-    font-family: $font2;
-    font-weight: 500;
-    padding: 10px;
-    line-height: 1.5;
-    margin-top: 20px;
-  }
+    h1 {
+      @include title-background;
+      font-family: $font1;
 
-  #next-class {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    font-family: $font1;
-
-    #start-date {
-      display: block;
-      margin-top: -8px;
+      span {
+        display: block;
+        margin-top: -12px;
+      }
     }
-  }
 
-  #location {
-    font-family: $font2;
-    font-size: $small-font;
+    p {
+      border: 3px solid #fff;
+      background-color: #faf7f7;
+      font-size: $small-font;
+      font-family: $font2;
+      font-weight: 500;
+      padding: 10px;
+      line-height: 1.5;
+      margin: 20px 0 10px 0;
+    }
+
+    #next-class {
+      margin-top: 10px;
+      font-size: 1.5rem;
+      font-family: $font1;
+
+      #start-date {
+        display: block;
+        margin-top: -8px;
+      }
+    }
+
+    #location {
+      display: block;
+      font-family: $font2;
+      font-size: $small-font;
+      margin-top: -3px;
+    }
   }
 }
 
@@ -106,6 +116,11 @@ main {
       }
     }
 
+    .languages:hover {
+      cursor: pointer;
+      outline: 2px solid white;
+    }
+
     button {
       background-color: $main-color1;
       border: none;
@@ -118,6 +133,10 @@ main {
 
     button:hover {
       cursor: pointer;
+    }
+
+    #see-program {
+      display: none;
     }
   }
 
@@ -212,6 +231,8 @@ footer {
   @include footer;
 }
 
+/* Media Queries */
+
 @media (max-width: 380px) {
   header {
     height: 68vh;
@@ -221,6 +242,274 @@ footer {
     }
 
     #next-class {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(233, 231, 231);
+    background-color: #faf7f7;
+
+    #top-nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #313131;
+      padding: 10px 0;
+
+      ul {
+        width: 80%;
+        min-width: 768px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            color: $main-color1;
+          }
+        }
+      }
+    }
+
+    #bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      min-width: 768px;
+      padding: 15px 0;
+
+      #nav-logo {
+        display: flex;
+
+        span {
+          color: $main-color1;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          span {
+            color: black;
+            font-family: $font1;
+            margin-left: 3px;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        width: 55%;
+        justify-content: flex-end;
+        gap: 10%;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: $main-color2;
+          }
+
+          a:hover {
+            color: $main-color1;
+          }
+        }
+      }
+
+      #campaign {
+        border: 5px solid $main-color1;
+        padding: 10px;
+
+        span {
+          color: $main-color1;
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      #campaign:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px 3px $main-color1;
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    background-image: $header-bg2;
+    background-size: auto;
+    background-position: top;
+
+    #menu {
+      display: none;
+    }
+
+    #headline {
+      margin-top: 150px;
+      width: 80%;
+      min-width: 800px;
+
+      #welcome-words {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+
+        span {
+          margin-top: -35px;
+        }
+      }
+
+      p {
+        margin: 0 0 40px 0;
+        width: 65%;
+        max-width: 800px;
+        font-size: 1.1rem;
+        padding: 15px 30px;
+      }
+
+      span#next-class {
+        font-size: 2rem;
+
+        #start-date {
+          display: inline-block;
+        }
+      }
+
+      #location {
+        display: block;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  main {
+    #main-curriculum {
+      background-position: bottom;
+
+      h2 {
+        padding: 30px 0 0 0;
+      }
+      #languages-container {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        max-width: 70%;
+
+        .languages {
+          flex-direction: column;
+          text-align: $text-center;
+          width: 15%;
+          min-width: 160px;
+          padding: 20px;
+
+          h3 {
+            padding: 5px 0;
+          }
+
+          p {
+            width: 60%;
+          }
+        }
+      }
+
+      button {
+        display: none;
+      }
+
+      #see-program {
+        display: block;
+        text-decoration: underline;
+        padding: 50px 0;
+      }
+
+      #see-program:hover {
+        cursor: pointer;
+        color: $main-color1;
+        text-decoration: none;
+      }
+    }
+
+    #featured-teachers {
+      padding: 50px 0;
+      .red-line {
+        margin-bottom: 50px;
+      }
+      #teachers-container {
+        width: 50%;
+        min-width: 768px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        row-gap: 50px;
+        align-content: center;
+
+        .teachers {
+          width: 100%;
+
+          .teacher-info {
+            blockquote {
+              margin-top: -5px;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    section#partners {
+      padding: 50px 0;
+      h2 {
+        color: #8f8c8c;
+      }
+
+      #partners-container {
+        gap: 50px;
+        span {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 0;
+
+    .logo {
+      align-items: center;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    p {
       font-size: 1.2rem;
     }
   }

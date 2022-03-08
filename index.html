@@ -22,28 +22,68 @@
     <script src="featured-mentors.js" defer></script>
   </head>
   <body>
+    <!--Navbar-->
+    <nav>
+      <div id="top-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div id="bottom-nav">
+        <div id="nav-logo">
+          <span>
+            <i class="fas fa-globe fa-3x"></i>
+          </span>
+          <div>
+            <span>Virag's</span>
+            <span>Web Development</span>
+          </div>
+        </div>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <div id="campaign">
+          <span><i class="fas fa-globe"></i>Campaign</span>
+        </div>
+      </div>
+    </nav>
     <!--Header-->
     <header>
-      <span>
+      <span id="menu">
         <i class="fas fa-bars fa-2x"></i>
       </span>
-      <span id="welcome-words">"Hello! Welcome to Virag's:"</span>
-      <h1>
-        WEB DEVELOPMENT
-        <span>COURSE</span>
-        <span>2022</span>
-      </h1>
-      <p>
-        Do you want to become a web developer? If yes, then this course is just
-        for you. The program's duration is 8 months, and it cost nothing to
-        participate. We start a new class every 4 months, so if you don't want
-        to miss the start date for the next class, then sign up and join us.
-      </p>
-      <span id="next-class"
-        >Our next class starts:
-        <span id="start-date">2022.03.10.(THU)</span></span
-      >
-      <span id="location">Virag's Web Development Course, online</span>
+      <div id="headline">
+        <span id="welcome-words">"Hello! Welcome to Virag's:"</span>
+        <h1>
+          WEB DEVELOPMENT
+          <span>COURSE</span>
+          <span>2022</span>
+        </h1>
+        <p>
+          Do you want to become a web developer? If yes, then this course is
+          just for you. The program's duration is 8 months, and it cost nothing
+          to participate. We start a new class every 4 months, so if you don't
+          want to miss the start date for the next class, then sign up and join
+          us.
+        </p>
+        <span id="next-class"
+          >Our next class starts:
+          <span id="start-date">2022.03.10.(THU)</span></span
+        >
+        <span id="location">Virag's Web Development Course, online</span>
+      </div>
     </header>
     <!--Main-->
     <main>
@@ -51,128 +91,133 @@
       <section id="main-curriculum">
         <h2>Main Curriculum</h2>
         <div class="red-line"></div>
-        <div class="languages">
-          <span>
-            <i class="fab fa-html5 fa-3x"></i>
-          </span>
-          <h3>HTML</h3>
-          <p>Start with HTML, Hypertext Markup Language.</p>
-        </div>
-        <div class="languages">
-          <span>
-            <i class="fab fa-css3-alt fa-3x"></i>
-          </span>
-          <h3>CSS</h3>
-          <p>Style a website with CSS, Cascading Style Sheets.</p>
-        </div>
-        <div class="languages">
-          <span>
-            <i class="fab fa-js fa-3x"></i>
-          </span>
-          <h3>JavaScript</h3>
-          <p>Make your websites interactive with JavaScript.</p>
-        </div>
-        <div class="languages">
-          <span>
-            <i class="fab fa-git-alt fa-3x"></i>
-          </span>
-          <h3>Git/Github</h3>
-          <p>Learn how to use Git, a version control system.</p>
-        </div>
-        <div class="languages">
-          <span>
-            <i class="fas fa-terminal fa-2x"></i>
-          </span>
-          <h3>CLI</h3>
-          <p>Learn how to use the command line interface.</p>
+        <div id="languages-container">
+          <div class="languages">
+            <span>
+              <i class="fab fa-html5 fa-3x"></i>
+            </span>
+            <h3>HTML</h3>
+            <p>Start with HTML, Hypertext Markup Language.</p>
+          </div>
+          <div class="languages">
+            <span>
+              <i class="fab fa-css3-alt fa-3x"></i>
+            </span>
+            <h3>CSS</h3>
+            <p>Style a website with CSS, Cascading Style Sheets.</p>
+          </div>
+          <div class="languages">
+            <span>
+              <i class="fab fa-js fa-3x"></i>
+            </span>
+            <h3>JavaScript</h3>
+            <p>Make your websites interactive with JavaScript.</p>
+          </div>
+          <div class="languages">
+            <span>
+              <i class="fab fa-git-alt fa-3x"></i>
+            </span>
+            <h3>Git/Github</h3>
+            <p>Learn how to use Git, a version control system.</p>
+          </div>
+          <div class="languages">
+            <span>
+              <i class="fas fa-terminal fa-2x"></i>
+            </span>
+            <h3>CLI</h3>
+            <p>Learn how to use the command line interface.</p>
+          </div>
         </div>
         <button type="button">Join our course 2022</button>
+        <span id="see-program">SEE THE WHOLE PROGRAM</span>
       </section>
       <!--Featured teachers-->
       <section id="featured-teachers">
         <h2>Featured Teachers</h2>
         <div class="red-line"></div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div1"></div>
+        <div id="teachers-container">
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div1"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>Bob Miller</h3>
+              <blockquote>JavaScript teacher at Udemy</blockquote>
+              <div class="grey-line"></div>
+              <p>
+                He is teaching JavaScript in the past 10 years, and started to
+                teach on Udemy since 2020.
+              </p>
+            </div>
           </div>
-          <div class="teacher-info">
-            <h3>Bob Miller</h3>
-            <blockquote>JavaScript teacher at Udemy</blockquote>
-            <div class="grey-line"></div>
-            <p>
-              He is teaching JavaScript in the past 10 years, and started to
-              teach on Udemy since 2020.
-            </p>
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div2"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>Nancy Hughes</h3>
+              <blockquote>Web Designer, teaching from New York</blockquote>
+              <div class="grey-line"></div>
+              <p>You can find some of her designs on Figma.</p>
+            </div>
           </div>
-        </div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div2"></div>
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div3"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>Emily Brown</h3>
+              <blockquote>A CSS expert, from Michigan</blockquote>
+              <div class="grey-line"></div>
+              <p>
+                She is preparing our students from zero experience into advanced
+                level in CSS.
+              </p>
+            </div>
           </div>
-          <div class="teacher-info">
-            <h3>Nancy Hughes</h3>
-            <blockquote>Web Designer, teaching from New York</blockquote>
-            <div class="grey-line"></div>
-            <p>You can find some of her designs on Figma.</p>
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div4"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>John Benkler</h3>
+              <blockquote>
+                Teaching full stack web development on Udemy
+              </blockquote>
+              <div class="grey-line"></div>
+              <p>
+                He is in this field in the past 15 years, he can give you all
+                the knowledge you need.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div3"></div>
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div5"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>Steven Wright</h3>
+              <blockquote>Command line expert.</blockquote>
+              <div class="grey-line"></div>
+              <p>
+                He is using the command line on a daily basis, he knows all the
+                tricks you need to have.
+              </p>
+            </div>
           </div>
-          <div class="teacher-info">
-            <h3>Emily Brown</h3>
-            <blockquote>A CSS expert, from Michigan</blockquote>
-            <div class="grey-line"></div>
-            <p>
-              She is preparing our students from zero experience into advanced
-              level in CSS.
-            </p>
-          </div>
-        </div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div4"></div>
-          </div>
-          <div class="teacher-info">
-            <h3>John Benkler</h3>
-            <blockquote>
-              Teaching full stack web development on Udemy
-            </blockquote>
-            <div class="grey-line"></div>
-            <p>
-              He is in this field in the past 15 years, he can give you all the
-              knowledge you need.
-            </p>
-          </div>
-        </div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div5"></div>
-          </div>
-          <div class="teacher-info">
-            <h3>Steven Wright</h3>
-            <blockquote>Command line expert.</blockquote>
-            <div class="grey-line"></div>
-            <p>
-              He is using the command line on a daily basis, he knows all the
-              tricks you need to have.
-            </p>
-          </div>
-        </div>
-        <div class="teachers">
-          <div class="profile-container">
-            <div id="img-div6"></div>
-          </div>
-          <div class="teacher-info">
-            <h3>Andrew Brown</h3>
-            <blockquote>Frontend developer</blockquote>
-            <div class="grey-line"></div>
-            <p>
-              He started his journey at Google, now he's teaching new comers
-              here at our platform.
-            </p>
+          <div class="teachers">
+            <div class="profile-container">
+              <div id="img-div6"></div>
+            </div>
+            <div class="teacher-info">
+              <h3>Andrew Brown</h3>
+              <blockquote>Frontend developer</blockquote>
+              <div class="grey-line"></div>
+              <p>
+                He started his journey at Google, now he's teaching new comers
+                here at our platform.
+              </p>
+            </div>
           </div>
         </div>
       </section>
