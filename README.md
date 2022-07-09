@@ -29,12 +29,27 @@
 
 ## Live Site URL: https://virag-ky.github.io/Capstone-Web-Development-Course/
 
+## Getting Started
+
+### Prerequisites
+
+- web browser (e.g. Google Chrome, Firefox)
+- text editor (e.g. VSCode)
+- CLI/terminal
+
+### Clone this repository
+
+```
+git clone git@github.com:virag-ky/Capstone-Web-Development-Course.git
+```
+
 ## Author
 
 👤 **Virag Kormoczy**
 
 - GitHub: [@virag-ky](https://github.com/virag-ky)
 - Twitter: [@Virag_Ky](https://twitter.com/Virag_Ky)
+- LinkedIn: [virag-kormoczy](https://linkedin.com/in/virag-kormoczy)
 
 ## 🤝 Contributing
 
